@@ -1,5 +1,3 @@
-package system;
-
 import java.io.IOException;
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -28,7 +26,7 @@ public class reqController extends HttpServlet {
     throws IOException, ServletException
   {
    
-    String toHash = req.getAttribute("submited");
+      String toHash = req.getParameter("submited");
         /*
         ** Password Hashing
         */
